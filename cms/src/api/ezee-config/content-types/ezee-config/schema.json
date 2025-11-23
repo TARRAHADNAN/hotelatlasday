@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "ezee_config",
+  "info": {
+    "singularName": "ezee-config",
+    "pluralName": "ezee-configs",
+    "displayName": "Configuration eZee",
+    "description": "Configuration du système de réservation eZee Absolute"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "hotelCode": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "bookingUrl": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    },
+    "apiKey": {
+      "type": "password",
+      "private": true
+    },
+    "apiEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "widgetTheme": {
+      "type": "json"
+    }
+  }
+}

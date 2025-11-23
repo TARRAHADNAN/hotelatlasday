@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_room_capacities",
+  "info": {
+    "displayName": "Capacité",
+    "description": "Capacité d'une chambre",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "adults": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 10,
+      "default": 2
+    },
+    "children": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "max": 10,
+      "default": 0
+    }
+  }
+}

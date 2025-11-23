@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_social_medias",
+  "info": {
+    "displayName": "Réseaux Sociaux",
+    "description": "Liens réseaux sociaux",
+    "icon": "share"
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "instagram": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "twitter": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "linkedin": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "tripadvisor": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}
