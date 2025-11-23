@@ -1,6 +1,6 @@
 import { StrapiImage, LocalizedContent, SEO } from './strapi';
 
-export type DifficultyLevel = 'easy' | 'moderate' | 'hard';
+export type DifficultyLevel = 'facile' | 'moyen' | 'difficile' | 'easy' | 'moderate' | 'hard';
 
 export interface ActivityAttributes extends LocalizedContent {
   name: string;
@@ -13,6 +13,11 @@ export interface ActivityAttributes extends LocalizedContent {
   featured: boolean;
   included: string[];
   notIncluded?: string[];
+  type?: string;
+  distance?: number;
+  phone?: string;
+  website?: string;
+  priceRange?: string;
   image: {
     data: StrapiImage | null;
   };

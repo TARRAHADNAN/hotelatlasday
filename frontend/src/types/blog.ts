@@ -27,6 +27,12 @@ export interface BlogPostAttributes extends LocalizedContent {
     data: StrapiImage | null;
   };
   category?: BlogCategory;
+  categories?: {
+    data: Array<{
+      id: number;
+      attributes: BlogCategory;
+    }>;
+  };
   author?: Author;
   tags?: string[];
   seo?: SEO;

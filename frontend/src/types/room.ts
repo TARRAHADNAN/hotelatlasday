@@ -8,6 +8,11 @@ export interface Amenity {
   icon: string;
 }
 
+export interface RoomCapacity {
+  adults: number;
+  children: number;
+}
+
 export interface RoomAttributes extends LocalizedContent {
   name: string;
   slug: string;
@@ -19,13 +24,19 @@ export interface RoomAttributes extends LocalizedContent {
   ezeeRoomCode: string;
   featured: boolean;
   order: number;
+  capacity?: RoomCapacity;
   image: {
     data: StrapiImage | null;
   };
   gallery: {
     data: StrapiImage[] | null;
   };
-  amenities: Amenity[];
+  amenities?: {
+    data: Array<{
+      id: number;
+      attributes: Amenity;
+    }>;
+  };
   seo?: SEO;
   createdAt: string;
   updatedAt: string;
