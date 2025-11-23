@@ -1,0 +1,42 @@
+{
+  "name": "hotel-atlas-day-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.2.14",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.4.5",
+    "next-intl": "^3.20.0",
+    "qs": "^6.13.0",
+    "framer-motion": "^11.11.1",
+    "lucide-react": "^0.446.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2",
+    "date-fns": "^4.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-select": "^2.1.2",
+    "@radix-ui/react-label": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/qs": "^6.9.16",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "tailwindcss-animate": "^1.0.7",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14"
+  }
+}
